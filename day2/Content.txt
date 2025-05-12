@@ -1,0 +1,34 @@
+#STATIC METHOD.
+-> using static keyword static block will be created and it is a singleton block
+#Static Method- For static method we don't need to create a object . static will act as instance or object.and using class name you can call static method.
+example below
+
+#CONSTRUCTOR
+-> Initialization of object, initialization means calling default constructor to create objects.
+
+#CONDITIONAL STATEMENTS
+->it will check for the condition and print that block.
+  types
+  1.if
+  2.else
+  3.else-if
+  4.switch-case
+
+  it are used to get the output in constant time.
+
+#LOOPING STATEMENTS
+->1.entry control loops
+    -do while loop
+  
+  Syntax for for-loop   #when we know the range
+        for(start; end; diff)
+        {
+           statments
+        }
+ syntax for while loop    #use if range is unknown.
+        while(end)
+        {
+            statments
+            increment or decrement
+        }
+

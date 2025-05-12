@@ -1,0 +1,8 @@
+Most of the Brute force solution will use two loops and most of the solution will be solved using double loops.
+The time complexity of the brute force solution will be O(n^2) because we are using two loops. i.e nested loop( loop inside loop)
+tips for writing code for any pattern progeram
+#pattern building
+-> There are only steps to print most of the pattern.
+1.Print no of rows.
+2.Print no of columns.
+3.print what to print and what not to print.

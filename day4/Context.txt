@@ -1,0 +1,73 @@
+#Switch case
+
+note:
+-> cases have to be the same type as expressions , must be a constant or litera.
+-> duplicate case values are not allowed .
+->break is use to terminate the sequence
+-> if break is not used , it will continue to next case.
+-> default will execute when none of the above does
+->if default is not at the end put break after it.
+
+Syntax for switch-case:
+switch(expression)
+{
+  case:   //we can use -> instead of : in switch case.
+     statement;   
+     break;
+  default:
+    statement;
+}
+
+enhanced switch case to make code optimized
+syntax:
+switch(expression){
+  case value -> Statement;
+  default -> statement;
+}
+
+
+#Ternary Operator
+-> Used instead of normal if and else statement.
+-> syntax
+(condition) ? (value if true) : (value if false);
+exp:
+//ternary operator ->Hollow sqaure
+
+class HollowSquare{
+  public static void main(String args[])
+  {
+    int n=5;
+    for(int i=1;i<=n;i++)
+    {
+      for(int j=1;j<=n;j++)
+      {
+        String pattern=(i==1 || j==1 || i==n || j==n) ? "*": " ";
+        System.out.print(pattern+" ");
+      }
+      System.out.println();
+    }
+  }
+}
+
+##Array
+-> initialization and declaration
+int[] arr={1,2,3,4,5}
+for(int i=0;i<arr.length;i++)
+{
+  System.out.println(i)
+}
+
+but instead we can use
+->syntax (for each loop)
+for(int i:arr)
+{
+  System.out.println(i);
+}
+
+
+## For each loop
+-> whenever we dont have length of array we use for each loop and whenever we dont know the index of array we use for each loop.
+-> Mostly will use for each loop in collection for exp List, set , map
+
+
+Homework try doing hour glass, howllow diamond, Butterfly pattern

@@ -1,0 +1,78 @@
+int a=5
+int b=6
+int c=7
+
+all the variable name (reference name) will be stored in stack memory.whereas the stored value which were assigned to those variable will be stored in Heap memory.
+as all a b c will be stored as int so why to store separately for that reason array got introduced.
+
+ques: Here all the blocks are having same data type .if all the blocks same data type why to create multiple variable .Simply we can create an array to store those value.
+
+Definition of arrray:
+-> collection of homogeneous data in continous allocation.
+exp: if variable a stored at address 100.then the swcond value of the array should be allocated at 104.
+
+Syntax:
+Declaration-
+datatype[] arrayname;
+initialization-
+datatype[] arrayname={1,2,3,4};     in same line
+
+
+-> If we want to get a data, previously we store all the data values in separate variables / individual variable.if we want to get the data we can simply print the variables and in array we have to print data,we have to print using index values.
+index values by default start with 0.
+
+-> see example in Syntax.java file.
+
+-> To get the size of array, we have to use array.length
+-> To get the length of string str.length()
+
+#Types of output format
+-> we can use simple for loop to get the output.
+-> using for each loop 
+-> 
+/*
+    to print the output
+    1. for(int i=0;i<=n;i++)
+    {
+
+    }
+    2.for(int i : arr){
+    System.out.println()}
+
+    //toString is an inbuilt method to print array values.
+    System.out.println(Arrays.toString(arr))
+    */
+   //internally toString contain for loop and it will print along with open and close square brackets followed by comma. exp:[1,2,3,4,5]
+
+   ## Camel case and Snake case 
+   odd_count is variable name (Snake case)
+   oddCount is also variable name (Camel case)
+
+   #Java strictly follows camel case.
+   #all inbuilt method follows Camel case.
+   like addTwovalues;
+   toString()
+
+   #ques: In a given array count odd numbers and even numbers.
+   Ans-look at OddEven.java file.
+ 
+#initializing declaraing the array with size
+syntax -> int[] arr=new int[5];
+Once you created an array along with size we can't modify it.
+
+int[] arr -> will be created in stack memory and will call it as reference. and new keyword tells to create object space for the array.
+
+if array type is integer by default all the value will be zero.and if array type is string all the default value will be null.
+
+#Whenever we are trying to assign or print nth index we get array out of bond exception.
+
+#Primitive data types can't be splitted and divided. exp:int, float,char
+#Non-primitive data type can be splitted and divided. Exp:Strings and all user defined objects.
+example for non primitive dtata type
+class Node{
+  int data;
+  Node next;
+}
+
+
+

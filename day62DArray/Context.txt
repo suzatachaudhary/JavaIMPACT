@@ -1,0 +1,20 @@
+#2d Array consist of rows and columns
+Syntax of 2D Array
+
+int[][] arr=new int[3][];
+int[][] arr=new int[][];  -wrong as number of row is not specified.
+
+-> the first square brackets represent rows and second square brackets represent columns.
+-> While declaring the array , we need to specify the number of rows and to mention number of columns is optional.
+
+#Size and length
+arr[5]={1,2,3}  // size-max element you can store and length -actual number of elements in array.
+each and every row column can be different then it is zagged array.
+
+{
+  {1,2,3},
+  {4,5,6},
+  {7,8,9}  sum of zigzag elements-->1,2,3,5,7,8,9.=35
+}
+
+#Ques : take square matrix rotate 90 degrees.
