@@ -1,0 +1,37 @@
+// git add .
+// git commit -m"message"
+// git push
+
+
+//#Monotonic stack
+// --> Stack in the sense last in first out.
+// --push():push operation means adding the element onto the stack.
+// --> pop(): pop operation removing top most element from the stack.
+// --> peek(): printing top most element of the stack.
+
+// ##Next greater element.
+
+//if solved using stack element.
+//if stack is empty return -1 qnd push the element into the stack .
+//if array element<stack element, then return stack element.and push array element on to stack.
+//if peek element is smaller pop it .then again compare with arr element and next stack element then return if stack element greater or else it become empty then again return -1.
+//follow same 
+// this is called monotonic stack.
+
+##Array List
+Array having fixed size we can't increased the size as well as we can't decrease.
+if arr[5] we can only store 5 element . if we want to add 6 element we have to create one more array with extra size but we can't increased the size
+but
+In ArrayList the size will be dynamic, You can increase the size as well as decrease.
+
+Syntax:
+List<Integer> arr= new ArrayList<>();
+List<Wrapper class of list type> ArrayListName=new ArrayList<>();
+//all list comes on collection but most of the array problem solved with ArrayList.
+
+// if array is initialized with size 2 and we are trying to add 3rd element the size of array will be doubled .if the size of array is 4  and we are trying to add 5th element the size will be doubled to 8 and vice versa. if array size is 8 and if we removed 4 elements out of 8 , and we trying to remove 5th element
+the array size becomes half.
+
+#Example how it works.
+arr[4] 1,2,3,4 --> if 5 is added the size will be automatically arr[8]
+arr[8] 1,2,3,4,5,6,7,8--> removed 1,2,3,4 still arr size will still be arr[8] but if 5 is also removed the size will be automatically arr[4] i.e half.

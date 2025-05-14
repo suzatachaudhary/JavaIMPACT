@@ -32,9 +32,3 @@ class Cap{
     System.out.println(maxProfit(price));
   }
 }
-//if solved using stack element.
-//if stack is empty return -1 qnd push the element into the stack .
-//if array element<stack element, then return stackm element.and push array element.
-//if peek element is smaller pop.then again compare with arr element and stack element then return if stack element greater.
-//follow same 
-// this is called monotonic stack.

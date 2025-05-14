@@ -1,0 +1,11 @@
+Recursion-means function calling itself until base condition is met.
+2 types.
+1--function calling same function itself and itself.
+2--function calling another function itself and itself.
+in java we don't have pointers. we can't use reference.so java is strictly passed by value.
+if we didn't  mention base case properly we will get an exception.
+if we didn't mention base case properly we will get an exception called stack overflow.
+
+
+#in strings we have a method called charAt
+str.charAt(4)  // hello output--o.
