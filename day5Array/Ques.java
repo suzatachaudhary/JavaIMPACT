@@ -1,29 +1,32 @@
 //[1,0,1,0,1,0] move all zeros to right side[1,1,1,0,0,0]
-
+import java.util.Arrays;
 class Ques{
   public static void main(String args[])
   {
     int[] arr={1,0,1,0,1,0};
-    for(int i=0;i<arr.length-1;i++)
+    int start=0;
+    int end=arr.length-1;
+
+    while(start<end)
     {
-      if(arr[i]==0 && arr[i+1]==1)
+      if(arr[start]==0 && arr[end]==1)
       {
-        arr[i]=1;
-        arr[i+1]=0;
+        int temp =arr[start];
+        arr[start]=arr[end];
+        arr[end]= temp;
+        start++;
+        end--;
+      }
+      else if(arr[start]==0 && arr[end]==0)
+      {
+        end--;
+      }
+      else
+      {
+        start++;
       }
     }
-    for(int i=0;i<arr.length-1;i++)
-    {
-      if(arr[i]==0 && arr[i+1]==1)
-      {
-        arr[i]=1;
-        arr[i+1]=0;
-      }
-    }
-    for(int i=0;i<arr.length;i++)
-    {
-      System.out.print(arr[i]);
-    }
+    System.out.println(Arrays.toString(arr));
   }
 }
 

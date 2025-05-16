@@ -1,7 +1,7 @@
        
-       *Collections Frameworks*
+                             *Collections Frameworks*
 
-List                      set                         Map
+List                      Set                       Map
 -ArrayList              -HashSet                  -HashMap
 -LinkedList            - LinkedHashSet            -LinkedHashmap
 -Vector                 -TreeSet                  -TreeMap

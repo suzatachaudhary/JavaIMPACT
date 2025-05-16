@@ -1,0 +1,52 @@
+String
+-collection of characters called string.
+
+declare array:
+int[] arr={1,2,3,4,5};
+
+as all the elements are similar in type, we can use array to store them.and to get the elements we can use index of the array. for example, arr[0] will give us.similarly to store multiple character we created String.
+
+when you created a string . its reference will be stored in stack memory. object will be created in string pool.once you created a string object in string pool, it will be created with some fixed size.
+modified in the sense we can't append , remove and interchange.
+so we can't remove and add any char to or from that means we can't modify string that is why string are immutable.
+
+in strings we have a method called charAt
+str.charAt(4)  // hello output--o.
+
+##Reverse using Recursion(String)
+-->  before this problem we have to know
+      -charAt(index)
+      -substring(index) exp str.substring(1)  //hello output will be ello. means string start from 1 -means index only.
+
+      so steps are 
+      1.take the first index i.e charAt(0), store in ch==  and compare with target character.
+      if it is equal ignore if not append, and move to next index i.e substring(1) and repeat the same process.
+
+      flowchart:
+                             "Hello"        first recursive call: " "
+                             "ello"         2      ''        '': "H"
+                             "llo"          3      ''        '': "He"
+                             "lo"           4      ''        '': "Hel"
+                             "o"            5      ''        '': "Hell"
+                             " "            6      ''        '': "Hello"  
+
+so the base case is whenever the string becomes empty. you have to stop the recursion.
+
+Strings are classes and arrays are objects.
+
+string a="Hello";
+string b="Hello";
+
+System.ou.println(a==b);   //output true
+
+     ## BACKTRACKING.
+--> Backtracking is an example of recursion.we have only two steps 1. taking the values 2. not taking the values. Whenever you reach base case, you have to print all the base case elements.we can say it is base case , when the array length is equals to original array length. and in every recursive call remove the last element.then it will backtrack.
+
+
+
+
+
+
+
+
+

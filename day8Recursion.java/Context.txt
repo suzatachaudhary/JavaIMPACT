@@ -9,3 +9,12 @@ if we didn't mention base case properly we will get an exception called stack ov
 
 #in strings we have a method called charAt
 str.charAt(4)  // hello output--o.
+
+##Reverse using Recursion(String)
+-->  before this problem we have to know
+      -charAt(index)
+      -substring(index) exp str.substring(1)  //hello output will be ello. means string start from 1 -means index only.
+
+      so steps are 
+      1.take the first index i.e charAt(0), store in ch==  and compare with target character.
+      if it is equal ignore if not append, and move to next index i.e substring(1) and repeat the same process.

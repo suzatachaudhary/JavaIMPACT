@@ -4,11 +4,13 @@ class ReverseNum{
   {
     Scanner sc=new Scanner(System.in);
     int Num=sc.nextInt();
-    int a= Num%10;
-    int b= (Num/10)%10;
-    int c= (Num/10)/10;
-    System.out.print(a);
-    System.out.print(b);
-    System.out.print(c);
+    int reverse=0;
+    while(Num>0)
+    {
+      int rem=Num%10;
+      reverse = reverse*10 + rem;
+      Num /= 10; 
+    }
+    System.out.println("Reverse of the number is: "+reverse);
   }
 }

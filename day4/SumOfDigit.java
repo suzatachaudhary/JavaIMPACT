@@ -16,17 +16,16 @@ class SumOfDigit{
   {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
-    int Sum = 0;
     while(n>9)
     {
       int sum=0;
       while(n!=0)
       {
         int rem=n%10;
-        Sum=Sum+rem;
+        sum=sum+rem;
         n=n/10;
       }
-      n=Sum;
+      n=sum;
     }
     System.out.println(n);
     

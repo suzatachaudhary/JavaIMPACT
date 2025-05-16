@@ -18,6 +18,6 @@
 //follow same 
 // this is called monotonic stack.
 
-##Array List
-Array having fixed size we can't increased the size as well as we can't decrease.
+// ##Array List
+// Array having fixed size we can't increased the size as well as we can't decrease.
 
