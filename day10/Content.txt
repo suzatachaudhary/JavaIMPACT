@@ -1,0 +1,41 @@
+       
+       *Collections Frameworks*
+
+List                      set                         Map
+-ArrayList              -HashSet                  -HashMap
+-LinkedList            - LinkedHashSet            -LinkedHashmap
+-Vector                 -TreeSet                  -TreeMap
+
+##list, set , map these are interfaces and rest of the elements are classes.
+Interfaces contains incomplete method. Classes contains complete method.
+
+
+**LIST**
+-> List contains ordered elements and which can accept duplicates. ArrayList is a dynamic array which can expand its size dynamically by 1.5 times.Vector is also a dynamic array which can exapnd its size dynamically by 2 times. LinkedList is a collection of similar type of elements in random allocation.
+
+**SET**
+-> Set contains unordered elements and which cannot accept duplicates. HashSet is a class which is use to store set elements. As set is unordered ,if we use tree set the elements will be ordered. 
+
+**MAP**
+-> map contains key value pairs and to store key value pairs we use HashMap as HashMap is class and map is interface. maps(key, value). Set and Maps are used to get the results in big O(1) time complexity .ie constant time complexity.
+In sets and maps , we don't have index value just like arrays.so we can't use simple for loop , we have to use only for each loop for(dataType variable: name)
+
+**Syntax**
+List- List<Integer> list=new ArrayList<>();
+hash set- Set<Integer> setname=new HashSet<>();
+Map- Map<Integer, Integer> mapName= new HashMap<>;
+
+note:
+we can't use list, hash, set directly as it contains incomplete method so we have to use its classes like ArrayList, HashSet, HashMap etc.
+
+     ** kadane's Algorithm**
+from the given array we have to find sum of subArrays exp{1,2,3}
+subArrays
+[1],[2],[3],[1,2],[2,3],[1,2,3]
+to find maximum sum of sub-arrays for optimal solution we have to use kadane's algorithm.
+step 1: Initialize two variables max-sum and sum(for getting individual sum) .
+and initialize sum with 0 and max with extreme negative value.
+step 2: Traverse the array from 0 to n-1.get the individual value from array and add them.
+step 3: always update max value.
+step 4: our target is to get the max sum if we carry negative values, the overall sum will be reduced so if sum<0 means negative value , restart the sum with 0.
+at the end of the loop return max.
