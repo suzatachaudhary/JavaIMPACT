@@ -4,7 +4,7 @@ class Remove
   {
     String str="asdfghjkl";
 
-   String str1=str;
+
    for(int i=0;i<str.length();i++)
    {
     if(str.charAt(i)=='g')

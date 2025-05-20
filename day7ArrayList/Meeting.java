@@ -34,7 +34,7 @@ public class MeetingScheduler{
   {
     meetings.sort(Comparator.comparingInt(m -> m.end));
     int count=0, lastEndTime= -1;
-    for(Meeting meeting: meetings)
+    for(int meeting: meetings)
     {
       if(meeting.start > lastEndTime)
       {

@@ -1,30 +1,30 @@
-class HCF
-{
-  public static void main(String[] args) 
-  {
-    int num1 = 18;
-    int num2=12;
+// class HCF
+// {
+//   public static void main(String[] args) 
+//   {
+//     int num1 = 18;
+//     int num2=12;
 
-    if (num1>num2)
-    {
-      int rem1=num1%num2;
-      int rem=num2%rem1;
-      if (rem==0)
-      {
-        System.out.println(rem1);
-      } 
-    }
-    else
-    {
-      int rem1=num2%num1;
-      int rem=num1%rem1;
-      if (rem==0)
-      {
-        System.out.println(rem1);
-      } 
-    }
-  }
-}
+//     if (num1>num2)
+//     {
+//       int rem1=num1/num2;
+//       int rem=num2%rem1;
+//       if (rem==0)
+//       {
+//         System.out.println(rem1);
+//       } 
+//     }
+//     else
+//     {
+//       int rem1=num2%num1;
+//       int rem=num1%rem1;
+//       if (rem==0)
+//       {
+//         System.out.println(rem1);
+//       } 
+//     }
+//   }
+// }
 
 //using recursion
 class Demo{
@@ -33,11 +33,10 @@ class Demo{
       return a;
     }
     else{
-      return hcf(b,a%b)
+      return hcf(b,a%b);
     }
   }
 }
-
 class HCF{
   public static void main(String[] args){
     Demo obj = new Demo();

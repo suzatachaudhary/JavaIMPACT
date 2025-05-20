@@ -1,0 +1,17 @@
+approach:  
+#slinding window 
+1.slinding is fixed
+2.slinding is changeable
+
+k=3
+input:[1,2,3,4,5,6,1]
+
+1.We have to use two pointers.
+types:
+--> constant window size--the size is fixed.
+--> dynamic window size--the window might expand or shrink.
+solve 1423 leetcode which is based on sliding window concept.
+
+
+
+
