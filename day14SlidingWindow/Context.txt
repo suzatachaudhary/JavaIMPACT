@@ -1,0 +1,91 @@
+SubArray      Subset           substring         subsequence
+
+[1,2,3]       [1,2,3]           "abc"             "abc"
+[1,2]yes      [1,2]yes          "ab" yes          "ab" yes
+[1,3]wrong    [1,3]yes          "ac" wrong       "ac" yes
+[2,1]wrong    [2,1]wrong        "ba"wrong        "ba" wrong
+
+
+##SubArray
+--> SubArray is a subset of the original array where the order of elements is preserved.Array elements should be consequetive.
+
+##Subset
+--> Subset is a subset of the original array where the order of elements is not preserved.Array elements might be continous and might not be.Reverse not possible.
+
+##substring
+-->Characters should be continous.reverse not possible.
+
+##subsequence
+-->character might be continous and might not be.it should be in sequence and reverse not possible.
+
+##Slinding window Dynamic size.
+input-"abcabcdb"
+
+steps:
+--> Initialize two pointer (L AND R )pointer at 0th index.
+--> Create a set.
+--> Run the loop from R to n-1.
+--> check r character in set if it is not present then add the character into set and after pushing the character calculate length then move R pointer to right(increase r).
+--> if R character is present in set then remove L character and move L pointer to right(increase L).
+--> if length is greater than max length then update max length.
+
+
+##1004 leetcode
+1.Initialize L and R pointers at 0th index.
+2.run loop from R to n-1.
+3.Initialize two variable one for maxCount and one for Counting zero(0).
+4.if arr[R]==1 the R++
+5.if arr[R]==0 then increase 0-Count .then when zeroCount>k then L++ until we find arr[l]==0.
+
+
+      *******************Greedy ALgo*************
+##Greedy Algorithm.
+--> types of problem.
+1.N-meetings in a room.
+2.job-scheduling.
+3.o/1 Knapsack fractional problem.
+
+**N-meetings in a room.
+-->input-- n=6, start[]={1,3,0,5,8,5}, end[]={2,4,5,7,9,9}
+   output:1 2 4 5.
+   in a room we have to conduct maximum possible meetings from all meetings.
+
+   type 1:
+   --> return maximum meetings.
+   type 2:
+   --> return pairs also.(ending time of current meeting is strictly less than the start time of next meeting).
+   type 3:
+   --> return all the pairs.(ending time of current pair and starting time of next meeting can be same.)
+   type 4:
+   --> Duplicates meetings accepted.
+
+steps to approach:
+1. from given arrays, make pairs or triplets.
+2. Do the custom sorting according to end time using Comparator method.
+3. For sure we will take 1st meeting . if ending time of current meeting is strictly lesser to the starting time of next meeting then consider the meeting.
+4. return the count of meetings considered.
+
+** 0/1 Knapsack fractional problem.**
+--> N=3, W=50, values[]={100,60,120}, weight[]={20,10,30}.
+output=240.00
+
+note: we can either take the item as whole or break it into smaller units.
+
+EXplanation: the first and second items are taken as a whole while only 20 units of the thrice item are taken.
+100+60+80=240.00 .
+
+1.from given array calculate per kg value arrays.
+2.make triplets (totalprice,total kg,per kg value) for every product.
+3.sort the triplets according to per kg value in descending order.
+4. Take complete weight from 1st set and decrease the weight from total capacity and calculate the total value i.e profit .
+
+
+##    **Job scheduling**
+N=4  , jobs ={(1,4,20),(2,1,10),(3,1,40),(4,1,30)}
+output: 2  60.
+Explanation: The 3rd job with a deadline 1 is performed 1 is performed during the first unit of time.the second time as its deadline is 4.
+profit =40+20=60.
+
+
+
+

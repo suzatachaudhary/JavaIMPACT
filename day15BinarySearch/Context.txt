@@ -1,0 +1,10 @@
+**Binary Search**
+--> Make sure the array should be sorted to perform binary search.
+steps:
+
+1. Initialize left pointer to 0 and right poinetr at n-1. run the loop from left to right and break the loop when left and right pointer crosses eachother.
+2. find the middle value of the array using the formula mid = left+(right-left)/2. 
+3. compare the middle value with the target value. If the middle value is equal to the target value,return mid.
+4. If the middle value is less than the target value, update the left pointer to mid+1. as definitely element will be present in right half.
+5. If the middle value is greater than the target value, update the right pointer to mid-1. as definitely target will belong to first half of the array.
+6. repeat the steps 2-5 until the target value is found or the left pointer crosses

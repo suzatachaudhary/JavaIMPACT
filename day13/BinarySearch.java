@@ -1,6 +1,7 @@
 //Binary Search
 // the array should be sorted
 //time complexity will be O(log n)
+//it won't work if there is any duplicates element.
 import java.util.Arrays;
 class BinarySearch{
   public static void main(String args[])
