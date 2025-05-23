@@ -1,0 +1,80 @@
+***OOPs concept**
+class- class is virtual entity, or it a blue print of object.class contains abstract methods and non abstarct method.
+object- it is an instance of class.
+to call non static method , whichever present in that particular class we have to create object for that particular class.
+if it is static method we can directly call using class.
+constructor-Initialization of object. it is used to initialize the object. it is neither class nor method, it is having class name and method properties.
+
+
+***Inheritance**
+--single
+--multiple
+--multilevel
+--hierarchical.
+
+1.single
+-->properties are inherited to subclass (child class) from parent class.
+
+2. multilevel
+--> properties are inherited to parent class from grand parent class. and properties are inheritated to child class from parent class.
+
+3. multiple.
+--> properties are inherited to child class from multiple parents
+
+4.hierarchical
+--> properties are inherited to multiple child from single parent class.
+
+##Extends keywork is used to inherit properties from clases.
+##implement keywork is used to inherit methods from interfaces.
+##
+
+****Polymorphism****
+--same method existing multiple times with different forms.
+
+1.method overloading 
+--> Same method name existing in same class with different parameters.
+
+2.method overiding.
+--> method declared in child class on the same method existing in parent class,
+    with the same name and same parameters.
+
+famous points:
+--> main method can be overriden.
+
+
+******Encapsulation***
+--> Binding method and data together and hiding senstive data. If a variable declared as a private in a class and if we want to access variable outside the class we can't access. if we want to access using method using access.
+
+
+**Abstrcation**
+--> Hiding implementation showing essential data. it is a process of exposing the necessary information to the outside world while hiding the internal details. If a method is a abstarct method , the method name should start with abstract keyword. As well as the class name should be start with abstract keyword.
+
+**there are 4 types of abstraction.
+1. data abstraction
+2. Functional abstraction 
+3. control abstraction
+4. procedure abstraction.
+
+--> Abstarct methods are incomplete method.
+
+***Interface***
+--> Interface contains only abstract methods. we can't create object for interface.
+    
+##access modifier.
+1.public -- if a variable,method,class is declared as public it can be accessed from any where.within the class ,within the package,within the sub package,within the sub class. and outside the package , outside the package, outside of file.
+2. private -- if a variable,method,class is declared as private it can be accessed only within the class only.
+3.protected-- if a variable,method,class is declared as protected it can be accessed only within the class , within file, within the package outside the pacakge child classes only.
+so outside the package parent class.
+4.default-- the scope will be within the class within the file within  the package only.
+
+
+
+
+
+
+
+
+
+
+
+
