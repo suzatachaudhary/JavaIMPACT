@@ -1,0 +1,72 @@
+
+
+        ***LINKED LIST***
+---> Ecah node consist of data as well as a pointer to the next node(i.e adress).
+--->There is no data type that can store data as well as address.
+--->so we have to create a data type which is user defined data type which can store data as well as adress.
+##TYPES of Linkedlist
+1.singly linked list
+2.doubly linked list
+3.circular linked list
+
+##Singly linked list.
+--> data will flow in one direction.
+
+##Double linked list.
+--> data will flow in both the direction.
+
+##circular linkedlist.
+--> head and tail are same.
+
+   types:
+   1.singlr circular linked list.
+   2.double circular linked list.
+
+--->Snipet 
+              class Node
+              {
+                int data;
+                Node next;
+                Node prev;  //for doubly linked list.
+              }
+
+--> Two possible objects :
+    1. Single Node & last Node-this object can accept data and address will be null.
+       snippet:
+             Node(int data1)
+             {
+              this.data=data1;
+              this .next=null;
+             }
+    
+    2.We have to create a constructor which can accept data as well as address .
+        snippet:
+              Node(int data1, Node next1)
+              {
+                this.data=data1;
+                this.next=next1;
+              }
+
+--> Linked list is used for faster insertion and faster deletions.
+
+                         ***Insertions***
+--->Insert at head.
+--->Insert at tail.
+--->Insert at nth node(before or after).
+--->Insert by value.
+
+
+                      ***Deletions***
+--> delete head .
+-->delete tail.
+-->delete nth node.
+-->delete by value.
+
+
+
+
+
+
+
+
+

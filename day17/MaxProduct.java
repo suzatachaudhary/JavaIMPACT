@@ -1,4 +1,4 @@
-// //Max product of sub array
+// Max product of sub array
 
 // observation:
 // -in a given sub array if we have even negtaive values. product will be positive.
@@ -37,7 +37,6 @@ class MaxProduct{
       prefix *= arr[i];
       suffix *= arr[n-i-1];
       MaxProduct=Math.max(MaxProduct, Math.max(prefix, suffix));
-      
     }
     System.out.println(MaxProduct);
   }
