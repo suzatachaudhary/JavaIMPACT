@@ -1,0 +1,25 @@
+##Sorting
+--> Sorting algorithm are used to make the unsorted data into either ascending or descending to get the fatser retrieval of output.
+
+Some examples:
+1. Bubble sort.
+2. Selection sort.
+3. Insertion sort.
+4. Merge sort.
+5. Quick sort.
+6. Heap sort.
+7. Radix sort.
+8. Counting sort.
+
+
+****Bubble Sort****
+--> Selecting the adjacent elements and Comparing those elements and swapping.
+--> after completion of every iteration the weightest or lightest element will go to the end.
+
+
+****Selection Sort****
+--> Selecting the element and placing at right place irrespective of array elements.
+--> approach:
+    1. select the index 0 as smallest element. then check other element smaller than arr[i]. if found then update smallest_index and after that swap(arr[i],arr[smallest_index]). and will continue the same process.
+
+    best ,worst, average time complexity is O(n^2).

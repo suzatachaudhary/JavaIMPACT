@@ -1,0 +1,22 @@
+***AVL CASES***
+
+i.Whenever there is left left case do the right rotate.
+ii.Whenever there is right right case do the left rotate.
+iii.whenever there is left right rotate do left rotate first then right rotate.
+iv.whenever there is left right rotate do left rotate first then right rotate.
+
+leetcode:- 103, 199, 700, 701, 450, 98, 653, 230, 653, 235,144 ,104, 94, 543, 145, 110, 102, 100 solve these leetcode for all the interview questions.
+
+
+
+##Interview Questions.
+why array uses linkedlist not array?
+-->tree stores null value. but 
+-->the trees will grow exponentially as array is fixed size that is why we use linked list.
+
+but heap uses tree as well as array why? Even though heap is trie.
+heap should use complete value and there is no scope of null value that is why heap uses array also. and traversal will be very easy using index value that is why we use array to store data.
+
+
+
+

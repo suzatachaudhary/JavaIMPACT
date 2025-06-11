@@ -1,0 +1,113 @@
+***Graphs***
+--> if it is a graph and there is no direction then we can't say it is cyclic as it is not a directed graph. even if there is cycle we can't say it as cyclic if it is not dirceted.
+
+
+****Trees*****
+--> Acyclic graph are trees. All trees are subset of graphs. 
+--> Trees are non linear data structures that mean data are arranged complex way, new  data or node can be added anywhere at any point.
+--> tree is a data structure, and the customization include we want to create a   node and that node can have left and right.
+--> The starting node is called root node.
+--> and the rest of the node will be called as child nodes.
+--> The base node which doesn't have any child node is called as leaf node.
+--> Every Node is a Root node.
+
+class node{
+  int data;
+  node left;
+  node right;
+}
+
+why trees are required.
+--> we want to get the output in logn time complexity. 
+
+Types of trees:
+1. N-ary Tree.
+    i.tries
+  
+2. Binary tree.
+    i.BST tree.
+    ii.Avl tree
+    iii.Red-Black tree.
+    iv.Segment tree.
+
+**Tree Traversal**
+-->Depth-first-search
+   i.preOrder Traversal
+   ii.inOrder Traversal
+   iii.postOrder Traversal
+
+-->Breadth-first-search
+   i.Level order Traversal
+
+***Height and Diameter**
+--> Longest path of tree(no of nodes in longest path) is Height of tree.
+    height of left tree , height of right tree can be calculated. it ,means we can calculate height of every node in tree.
+    i.e Max(all paths)
+--> Diameter of tree-(height of left tree + height of right tree)+1.  (+1 as root node)
+
+##Balanced tree
+-->if difference of height of left tree and height of right tree is -1, 0, 1 then it is balanced tree. for every node.
+if it is not balance 
+
+
+##Binary Tree
+--> The root node contains at max two child nodes.
+
+
+##Complete Binary tree
+-->Every level should be filled and it should start left to right.
+
+##full binary tree
+-->Every level should be filled and every node should contain either 0 or 2 child.
+
+##perfect binary tree. 
+--> every level should be filled and every node should contain two child nodes.
+
+
+***Binary Search Tree***
+--> We have to create a tree in such manner where root node is greater than left node and smalller than right node.  i.e (leftnode< Root <rightnode).
+
+Traversal Technique:
+--> Depth First Search
+     1.PreOrder: Root-left-right
+     2.InOrder: Left-root-right
+     3.PostOrder: Left-right-root
+
+***Data structure for traversal***
+--> Stacks are used for Depth first Search.
+--> Queues are used in Breadth First Search.
+
+
+**Drawbacks of BSt***
+--> in a BST the tree might skew then eventually the searching of elements will take O(n) time complexity.
+--> so we need to balance the tree. each and every node. i.e self balancing tree(Avl Tree).
+
+***AVL Tree/Self balancing tree***
+-->Whenever Tree get unbalanced using AVL methods the tree will be balanced that too self balanced.
+-->There are 4 cases:
+     1.left left.
+     2.right right.
+     3.left right.
+     4.right left.
+
+--> According to the case we have to do left rotation and right rotation.
+
+***Segment Tree***
+-->whenever we have range queries,we are using prefix sum for the optimal Solution. and it will take O(n) time complexity.
+-->Now if we want to get the same output in O(logn) time complexity then we have to use Trees and that too segment tree.
+-->Whenever the array values are updated, if we are still using prefix sum for that updated array we have to create one more prefix array now its taking O(n+n) time complexity as well as (n+n) space complexity as we are creating two different arrays.
+
+What if the array values are updated n times?--definitely time complexity will be O(n*n).and the space complexityas well will be (n*n).
+Because of this reason we have to use segment tree.
+
+
+***N-array Tree***
+-->For the root node if n child are attached then it is called N-array tree.
+
+
+
+
+
+
+
+

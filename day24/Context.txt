@@ -1,0 +1,22 @@
+  ***STack***
+  -stack is a linear data structure which works LIFO manner(Last in first out).
+  some important operation are:
+  1.push
+  2.pop
+  3.peek
+  4.isEmpty
+  5.display
+  6.size.
+
+stacks are used to get the output in constant time which is big O(1).
+
+****Queues***
+--> queue is a linear data structure which works FIFO manner(first in first out).
+
+Types of Queues:
+-> Single ended queue. --> can perform operation from one side only
+-> Double ended queue. --> can perform both enqueue and dequeue from both ends.
+-> Priority Queue.
+    -> Enqueue.
+    -> MaxQueue.
+-> Circular queue.
